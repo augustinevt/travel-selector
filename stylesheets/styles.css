@@ -1,0 +1,9 @@
+#output {
+  display: none;
+}
+
+img {
+  float: left;
+  width: 538px;
+  height: 350px;
+}
