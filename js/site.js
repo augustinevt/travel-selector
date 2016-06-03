@@ -1,6 +1,5 @@
 $(function() {
 
-
   var img = {
     rookIsland: 'http://cdn2-b.examiner.com/sites/default/files/styles/image_content_width/hash/6a/72/6a72583132ee38b97ed5391751d12513.jpg?itok=DBVIu3dA',
     dubai: "http://www.visitdubai.com/-/media/images/landing-page/desktop/1-discover-all-that-is-possible-in-dubai.jpg",
@@ -21,16 +20,6 @@ $(function() {
     paris: "Paris, the cosmopolitan capital of France, is one of the largest agglomerations in Europe, with 2.2 million people living in the dense, central city and almost 12 million people living in the whole metropolitan area. Located in the north of France on the river Seine, Paris has the well deserved reputation of being the most beautiful and romantic of all cities, brimming with historic associations and remaining vastly influential in the realms of culture, art, fashion, food and design. Dubbed the City of Light (la Ville Lumière) and Capital of Fashion, it is home to the world's finest and most luxurious fashion designers and cosmetics, such as Chanel, Dior, Yves Saint-Laurent, Guerlain, Lancôme, L'Oréal, Clarins, etc. A large part of the city, including the River Seine, is a UNESCO World Heritage Site. The city has the second highest number of Michelin restaurants in the world (after Tokyo) and contains numerous iconic landmarks, such as the world's most visited tourist site the Eiffel Tower, the Arc de Triomphe, the Notre-Dame Cathedral, the Louvre Museum, Moulin Rouge, and Lido, making it the most popular tourist destination in the world with 45 million tourists annually."
   };
 
-
-
-
-
-
-
-
-
-
-
   $('form').submit(function(event) {
     event.preventDefault();
 
@@ -41,18 +30,9 @@ $(function() {
     var q5 = parseInt( $('input:radio[name=q5]:checked').val() );
     var result = q1 + q2 + q3 + q4 + q5
 
-
-  //  alert(q1);
-  //  alert(q2);
-  //  alert(q3);
-  //  alert(q4);
-  //  alert(q5);
-  //   alert(result);
-
     var outputH2 = $('#output h2');
     var outputImg = $('#output img');
     var outputText = $('#output p span');
-
 
     $('#form-div').fadeOut(500, function() {
       $('#output').fadeIn();
@@ -83,9 +63,6 @@ $(function() {
       outputImg.attr('src', img.paris );
       outputText.text(text.paris);
     }
-
-
-
 
   });
 
