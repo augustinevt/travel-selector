@@ -28,7 +28,7 @@ $(function() {
     var q3 = parseInt( $('input:radio[name=q3]:checked').val() );
     var q4 = parseInt( $('input:radio[name=q4]:checked').val() );
     var q5 = parseInt( $('input:radio[name=q5]:checked').val() );
-    var result = q1 + q2 + q3 + q4 + q5
+    var result = q1 + q2 + q3 + q4 + q5;
 
     var outputH2 = $('#output h2');
     var outputImg = $('#output img');
